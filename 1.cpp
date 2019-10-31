@@ -1,20 +1,30 @@
 #include <iostream>
 #include <cmath>
 
-int main()
+int main(void)
 {
-	int  x, y, z;
-	std::cout<<"Ingrese el primer lado:\n"<<std::endl; std::cin>>x;
-	std::cout<<"Ingrese el segundo lado:\n"<<std::endl; std::cin>>y;
-	std::cout<<"Ingrese el tercer lado:\n"<<std::endl; std::cin>>z;
+	std::cout<<"Ingrese el radio del círculo"<<std::endl;
+	int N;
+	std::cin<<N;
+	std::cout<<"El diámetro del círculo es\n"<<diametro(N)<<std::endl;
+	std::cout<<"El perímetro del círculo es\n"<<perimetro(N)<<std::endl;
+	std:.cout<<"El área del círculo es\n"<<area(N)<<std::endl;
 
-	if (x*x + y*y == z*z)
+
+
+double diametro(int x)
 {
-	std::cout<<"\nEl triángulo es rectángulo\n"<<std::endl;
+	return x*M_PI;
 }
-	else if( x*x + y*y != z*z)
+double perimetro(int x)
 {
-	std::cout<<"\nEl triángulo no es rectángulo\n"<<std::endl;
+	return 2*x*M_PI;
+}
+double area(int x)
+{
+	return  M_PI*(x*x);
 }
 
-} 
+return 0;
+}
+

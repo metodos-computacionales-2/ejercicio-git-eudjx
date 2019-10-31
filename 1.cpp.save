@@ -1,0 +1,9 @@
+#include <iostream>
+#include <cmath>
+
+int main(){
+  int  x, y, z;
+  std::cout<<"Ingrese el primer lado:\n"<<std::endl; std::cin>>x;
+  std::cout<<"Ingrese el segundo lado:\n"<<std::endl; std::cin>>y;
+
+  std::cout<<"Ingrese el tercer lado:\n"<<std::endl;

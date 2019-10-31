@@ -14,7 +14,7 @@ int main(void)
 
 double diametro(int x)
 {
-	return x*M_PI;
+	return x*2;
 }
 double perimetro(int x)
 {
